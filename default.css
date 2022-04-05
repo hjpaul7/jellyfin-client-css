@@ -721,12 +721,12 @@ div#itemBackdrop {
   content: "";
   position: fixed;
   width: 90%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     #ddd,
     transparent 15px calc(100% - 15px),
     #ddd
-  );
+  ); */
   left: 50%;
   transform: translatex(-50%);
   z-index: 200;
