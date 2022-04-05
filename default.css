@@ -708,7 +708,7 @@ div#itemBackdrop {
   height: 100%;
   overflow: scroll;
   position: relative;
-  background: #ddd;
+  /* background: #ddd; */
   color: #383838;
   width: 90%;
   border-radius: 10px;
