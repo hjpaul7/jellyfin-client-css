@@ -1911,6 +1911,6 @@ select#user_list_for_add {
   color: white !important;
 }
 
-.card[data-type="Movie"] .cardText {
+/* .card[data-type="Movie"] .cardText {
   display: none !important;
-}
+} */
