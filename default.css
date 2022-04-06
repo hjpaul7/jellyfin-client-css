@@ -1919,6 +1919,6 @@ select#user_list_for_add {
   display: none;
 } */
 
-div[data-type="Series"] .cardText {
+.card[data-type="Movie"] > div > div:nth-child(2) {
   display: none;
 }
