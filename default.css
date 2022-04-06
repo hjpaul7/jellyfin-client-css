@@ -1915,6 +1915,6 @@ select#user_list_for_add {
   display: none !important;
 } */
 
-.cardText[data-type="Movie"] {
+.cardText[data-type="Actor"] {
   display: none;
 }
