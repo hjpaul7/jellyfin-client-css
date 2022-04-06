@@ -708,7 +708,7 @@ div#itemBackdrop {
   height: 100%;
   overflow: scroll;
   position: relative;
-  background: #ddd;
+  /* background: #ddd; */
   color: #383838;
   width: 90%;
   border-radius: 10px;
@@ -721,12 +721,12 @@ div#itemBackdrop {
   content: "";
   position: fixed;
   width: 90%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     #ddd,
     transparent 15px calc(100% - 15px),
     #ddd
-  );
+  ); */
   left: 50%;
   transform: translatex(-50%);
   z-index: 200;
@@ -1909,4 +1909,12 @@ select#max_data_age_select,
 select#files_to_keep,
 select#user_list_for_add {
   color: white !important;
+}
+
+/* .card[data-type="Movie"] .cardText {
+  display: none !important;
+} */
+
+.cardText[data-type="Series"] {
+  display: none;
 }
