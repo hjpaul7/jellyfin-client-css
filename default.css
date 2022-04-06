@@ -1918,3 +1918,7 @@ select#user_list_for_add {
 /* .card[data-type="Series"] .cardText {
   display: none;
 } */
+
+div[data-type="Series"] .cardText {
+  display: none;
+}
