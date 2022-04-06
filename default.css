@@ -1914,3 +1914,7 @@ select#user_list_for_add {
 /* .card[data-type="Movie"] .cardText {
   display: none !important;
 } */
+
+.cardText[data-type="Movie"] {
+  display: none;
+}
