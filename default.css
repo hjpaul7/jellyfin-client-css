@@ -1910,7 +1910,3 @@ select#files_to_keep,
 select#user_list_for_add {
   color: white !important;
 }
-
-.card[data-type="Movie"] > div > div:nth-child(2) {
-  display: none;
-}
