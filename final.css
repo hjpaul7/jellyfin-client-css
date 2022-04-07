@@ -112,7 +112,7 @@ video:cue {
 :root {
   --rounding: 10px;
   --card-rounding: 10px 10px 10px 10px;
-  --accent: black;
+  --accent: linear-gradient(140deg, #aa5cc3, #00a4dc);
   --accent-selected: linear-gradient(140deg, #00a4dc, #aa5cc3);
   --accent-text: linear-gradient(#00a4dc 0%, #aa5cc3 60%);
   --accent-icon: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
@@ -721,12 +721,12 @@ div#itemBackdrop {
   content: "";
   position: fixed;
   width: 90%;
-  /* background: linear-gradient(
+  background: linear-gradient(
     0deg,
     #ddd,
     transparent 15px calc(100% - 15px),
     #ddd
-  ); */
+  );
   left: 50%;
   transform: translatex(-50%);
   z-index: 200;
