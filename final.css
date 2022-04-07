@@ -112,7 +112,7 @@ video:cue {
 :root {
   --rounding: 10px;
   --card-rounding: 10px 10px 10px 10px;
-  --accent: linear-gradient(140deg, #aa5cc3, #00a4dc);
+  --accent: black;
   --accent-selected: linear-gradient(140deg, #00a4dc, #aa5cc3);
   --accent-text: linear-gradient(#00a4dc 0%, #aa5cc3 60%);
   --accent-icon: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
