@@ -111,7 +111,7 @@ video:cue {
 
 :root {
   --rounding: 10px;
-  --card-rounding: 10px 10px 0px 0px;
+  --card-rounding: 10px 10px 10px 10px;
   --accent: linear-gradient(140deg, #aa5cc3, #00a4dc);
   --accent-selected: linear-gradient(140deg, #00a4dc, #aa5cc3);
   --accent-text: linear-gradient(#00a4dc 0%, #aa5cc3 60%);
@@ -1495,260 +1495,153 @@ div#loginPage {
 }
 
 #loginPage .squareCard {
-  width: 20vh;
+  width: 50% !important;
+  background: rgb(20, 20, 20) !important;
+  transform: none !important;
 }
 
-div#divUsers {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  overflow-x: scroll;
-  grid-gap: 10px;
-  max-width: 45em;
+#loginPage .cardText {
+  opacity: 1;
+}
+
+.skinHeader.semiTransparent.noHeaderRight {
+  background: transparent !important;
+}
+
+div#loginPage {
+  margin-top: 0 !important;
+  overflow: hidden scroll;
+}
+
+#loginPage h1::after {
+  content: "Sign In";
+  font-size: 32px;
+}
+
+#loginPage h1 {
+  font-weight: 700;
+  font-size: 0;
+  margin-bottom: 21.44px;
+  margin-top: 32px !important;
+  text-align: left;
+}
+
+.inputContainer {
+  margin-bottom: 1.8em;
+  margin-top: 1.8em;
 }
 
 #loginPage .padded-left.padded-right.padded-bottom-page {
-  width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2em 2em !important;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  background: #000000bf;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  border-radius: 10px;
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 3em !important;
+  max-width: 24em;
+}
+
+#loginPage .readOnlyContent {
+  padding: 0 !important;
+  width: 100% !important;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background: transparent;
+}
+
+.manualLoginForm {
+  height: 100%;
+  width: 100%;
+}
+
+#loginPage .inputContainer {
+  background: #333;
+  border-radius: var(--rounding);
+  height: 4em;
+  position: relative;
+}
+
+#loginPage .inputLabel.inputLabelFocused,
+#loginPage .inputLabel:not(.inputLabel-float) {
+  font-size: 0.8em;
+  left: 4%;
+  top: 4%;
+  transform: none;
+}
+
+.visualLoginForm {
+  width: 100%;
+  position: relative;
   overflow: hidden;
 }
 
-html:not(.layout-mobile) #loginPage .inputContainer {
-  position: relative;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 2.75em;
-  background: transparent;
-  border-bottom: 3px solid white !important;
-  border-radius: 0;
+#divUsers {
+  flex-flow: revert;
+  overflow: scroll visible;
+  justify-content: flex-start;
 }
 
-html:not(.layout-mobile) #loginPage .inputLabelUnfocused {
+#loginPage .emby-input {
+  height: 100%;
+  border: none;
+  background: transparent !important;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none !important;
+  padding: 4% !important;
+  font-size: 1.1em;
+  border: none !important;
+}
+
+#loginPage .inputLabel {
   position: absolute;
-  z-index: 1;
   top: 50%;
-  left: 0;
+  left: 4%;
   transform: translateY(-50%);
-  transition: 0.2s;
-  color: white;
   font-size: 1.5em;
+  font-weight: 300;
+  transition: 0.2s ease;
+  color: #8c8c8c;
 }
 
-html:not(.layout-mobile) #loginPage .inputLabelFocused,
-html:not(.layout-mobile) #loginPage .inputLabel:not(.inputLabel-float) {
-  top: -50%;
-  left: 0;
-  position: absolute;
-  z-index: 1;
-  transition: 0.2s;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%) scale(1.1);
-  -o-transform: translateY(-50%) scale(1.1);
-  font-size: 1em;
-  color: white !important;
-  -webkit-animation: none !important;
-  animation: none !important;
+#loginPage .inputContainer:focus,
+#loginPage .inputContainer:focus-within {
+  background: #454545;
+}
+
+.layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+  width: 90vw !important;
+  max-width: 90vw !important;
+  height: 90vh !important;
+  background: transparent;
 }
 
 .layout-mobile #loginPage {
-  background: linear-gradient(140deg, #3e2247 10%, #003c50) !important;
-  overflow: scroll;
+  background: linear-gradient(to left, #000000bf, #000000bf),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/9f09b85f-530e-4090-82c3-a60ea2b3177f/US-en-20211115-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
+  background-size: cover !important;
 }
 
-.layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
-  background: #eee;
-  width: 80%;
-  color: #373737;
-  border-radius: 5px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.layout-mobile #loginPage .cardBox.cardBox-bottompadded {
-  background: white;
-  color: black;
-  font-weight: 800;
-  border: 0.5px solid rgba(0, 0, 0, 0.5);
-  box-shadow: none;
-}
-
-.layout-mobile #loginPage .emby-input {
-  height: 100%;
-  width: 80%;
-  float: right;
-  background: transparent !important;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
-  box-shadow: none !important;
-  border: none;
-  font-size: 2rem;
-  text-shadow: none;
-}
-
-.layout-mobile #loginPage .raised {
-  border-radius: 50px;
-  background: linear-gradient(90deg, #aa5cc3 0%, #00a4dc);
-  font-size: 1.3rem !important;
-  overflow: hidden !important;
-}
-
-.layout-mobile #loginPage h1 {
-  display: none;
-}
-
-.layout-mobile #loginPage .inputContainer {
-  position: relative;
-  height: 3rem;
-  border: 1px solid #aaa;
-  border-radius: 50px;
-  overflow: hidden;
-}
-
-.layout-mobile #loginPage .inputLabel[for="txtManualName"] {
-  font-size: 0;
-  color: #383838;
-}
-
-.layout-mobile #loginPage .inputLabel[for="txtManualName"]::before {
-  content: "\f406";
-  font-size: 2rem;
-  font-family: "Font Awesome 5 Pro";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 1rem;
-}
-
-.layout-mobile #loginPage .inputLabel[for="txtManualName"]::after {
-  content: "";
-  height: 70%;
-  width: 2px;
-  background: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  right: 82.5%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.layout-mobile #loginPage .inputLabel[for="txtManualName"]::after {
-  content: "";
-  height: 70%;
-  width: 2px;
-  background: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  right: 82.5%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.layout-mobile #loginPage .inputLabel[for="txtManualPassword"] {
-  font-size: 0;
-  color: #383838;
-}
-
-.layout-mobile #loginPage .inputLabel[for="txtManualPassword"]::before {
-  content: "\f084";
-  font-size: 2rem;
-  font-family: "Font Awesome 5 Pro";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 1rem;
-}
-
-.layout-mobile #loginPage .inputLabel[for="txtManualPassword"]::after {
-  content: "";
-  height: 70%;
-  width: 2px;
-  background: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  right: 82.5%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-@media (max-width: 346px) {
-  .layout-mobile #loginPage .inputLabel[for="txtManualName"]::before {
-    font-size: 2.5rem;
+@media (orientation: landscape) {
+  .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+    width: 90vh !important;
+    max-width: 90vh !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    transform: translateX(-50%);
+    top: 0;
   }
-  .layout-mobile #loginPage .inputLabel[for="txtManualPassword"]::before {
-    font-size: 2.5rem;
-  }
-  .layout-mobile #loginPage .emby-input {
-    font-size: 1.5rem;
-  }
-  .layout-mobile #loginPage .raised {
-    font-size: 0.895rem !important;
-  }
-}
-
-#loginPage .cardBox.cardBox-bottompadded {
-  margin: 0;
-  box-shadow: none;
-  background: transparent;
-}
-
-#loginPage .cardScalable {
-  background: rgb(255 255 255 / 0.7);
-  border-radius: var(--rounding);
-}
-
-#loginPage .emby-button {
-  background: rgb(255 255 255 / 0.2);
-  border: 2px solid white;
-}
-
-#loginPage .emby-button:hover {
-  background: rgb(255 255 255 / 0.35);
-}
-
-div#divUsers::-webkit-scrollbar-track-piece {
-  background: transparent !important;
-}
-div#divUsers::-webkit-scrollbar-track {
-  box-shadow: none !important;
-}
-#loginPage .raised::before {
-  display: none;
-}
-
-#loginPage .raised span {
-  z-index: 1;
-  color: white;
-  background: transparent;
-}
-
-html:not(.layout-mobile) #loginPage .inputContainer input {
-  background: transparent !important;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
-  box-shadow: none !important;
-  color: white;
-  border: none;
-  text-shadow: none;
-  font-size: 1.5em;
-}
-
-html:not(.layout-mobile) #loginPage .inputContainer {
-  margin-top: 1.2em;
-}
-.layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
-  background: #eee;
-  width: 80%;
-  color: #373737;
-  border-radius: 5px;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 /*Theming for the dashboard*/
@@ -1912,5 +1805,17 @@ select#user_list_for_add {
 }
 
 .card[data-type="Movie"] > div > div:nth-child(n + 2) {
+  display: none;
+}
+
+.card[data-type="Series"] > div > div:nth-child(n + 2) {
+  display: none;
+}
+
+.card[data-type="BoxSet"] > div > div:nth-child(n + 2) {
+  display: none;
+}
+
+.card[data-type="CollectionFolder"] > div > div:nth-child(2) {
   display: none;
 }
