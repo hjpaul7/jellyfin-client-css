@@ -489,7 +489,7 @@ fieldset {
 
 span.material-icons.detailButton-icon.check.playstatebutton-icon-played,
 span.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating {
-  background: var(--accent-text);
+  background: var(--accent);
   -webkit-background-clip: text;
   background-clip: text;
   /* color: transparent; */
