@@ -1,5 +1,3 @@
-/*Fonts */
-
 @import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons@latest/Font%20Awesome/light.css");
 @import url("./src/Raleway.css");
 @import url("./src/Montserrat.css");
@@ -492,7 +490,7 @@ span.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating {
   background: var(--accent-text);
   -webkit-background-clip: text;
   background-clip: text;
-  color: var(--accent);
+  color: var(--accent) !important;
 }
 
 .raised::before {

@@ -1,0 +1,9 @@
+@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/JellyTheme.css");
+:root {
+  --accent: #aa5cc3 !important;
+}
+@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Resize-Cards.css");
+
+.layout-mobile .primaryImageWrapper > img {
+  display: block !important;
+}
