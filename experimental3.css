@@ -1655,6 +1655,10 @@ select#user_list_for_add {
 
 /* -------- EXTRAS ------- */
 
+.detailLogo {
+  margin-bottom: 3vh;
+}
+
 .infoWrapper {
   height: 140px !important;
 }
